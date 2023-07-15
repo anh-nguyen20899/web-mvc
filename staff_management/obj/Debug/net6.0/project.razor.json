@@ -18394,6 +18394,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\webmvc\\staff_management\\Views\\Employee\\View.cshtml",
+      "TargetPath": "Views\\Employee\\View.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\webmvc\\staff_management\\Views\\Employee\\Index.cshtml",
+      "TargetPath": "Views\\Employee\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\webmvc\\staff_management\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"

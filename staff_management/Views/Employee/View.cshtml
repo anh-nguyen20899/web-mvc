@@ -1,0 +1,34 @@
+@model staff_management.Models.EditEmployeeViewModel
+@{
+
+}
+<h2> Details of Employee </h2>
+<form method="post" action="view" class="m-auto">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="Id">Id</label>
+      <input type="text" class="form-control" id="Id" placeholder="Id" asp-for="Id" readonly>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="Name">Name</label>
+      <input type="text" class="form-control" id="Name" placeholder="Name" asp-for="Name">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="Email" placeholder="Email" asp-for="Email">
+    </div>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="Department">Department</label>
+    <input type="text" class="form-control" id="department" placeholder="Department" asp-for="Department">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="date">Date of Birth</label>
+    <input type="date" class="form-control" id="dob" placeholder="DOB" asp-for="Dob">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="salary">Salary</label>
+    <input type="number" class="form-control" id="salary" placeholder="Salary" asp-for="Salary">
+  </div>
+  <button type="submit" class="btn btn-primary m-auto">Add</button>
+</form>
