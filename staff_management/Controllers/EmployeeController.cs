@@ -76,4 +76,16 @@ public class EmployeeController : Controller
         }
         return RedirectToAction("Index");
     }
+    [HttpPost]
+    public async Task<IActionResult> Delete(EditEmployeeViewModel model)
+    {
+        var employee = await _context.MyEmployees.FindAsync(model.Id);
+        if (employee != null)
+        {
+            _context.MyEmployees.Remove(employee);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+        return RedirectToAction("Index");
+    }
 }
