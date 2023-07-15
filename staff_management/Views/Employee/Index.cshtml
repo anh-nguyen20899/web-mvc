@@ -1,0 +1,32 @@
+@model List<staff_management.Models.Employee>
+@{
+
+}
+<h2> List of our Employees </h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Dob</th>
+      <th scope="col">Salary</th>
+      <th scope="col">Department</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var employee in Model)
+    {
+        <tr>
+            <td>@employee.Id</td>
+            <td>@employee.Name</td>
+            <td>@employee.Email</td>
+            <td>@employee.Dob.ToString("dd-MM-yyyy")</td>
+            <td>@employee.Salary</td>
+            <td>@employee.Department</td>
+            <td><a href="Employee/View/@employee.Id"> View </a></td>
+        </tr>
+    }
+  </tbody>
+</table>
